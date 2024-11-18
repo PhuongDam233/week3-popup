@@ -1,4 +1,9 @@
 .popup {
+  @include visible(0);
+  @include transition;
+  &.active {
+    @include visible(1);
+  }
   &__overlay {
     background-color: var(--black-cl);
     opacity: 0.6;
@@ -14,6 +19,7 @@
     overflow: hidden;
     display: flex;
     background-color: var(--white-cl);
+
     &-img {
       width: 50%;
       img {
