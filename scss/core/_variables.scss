@@ -1,46 +1,47 @@
 :root {
-	/* MaxWidth Of Page, Container-Fluid, Container, Gutter*/
+  /* MaxWidth Of Page, Container-Fluid, Container, Gutter*/
 
-	--max-width-page: 2560px;
-	--max-width-container-fluid: 1920px;
-	--max-width-container: calc(1200px + calc(var(--gap) * 2)); 
+  --max-width-page: 2560px;
+  --max-width-container-fluid: 1920px;
+  --max-width-container: calc(1200px + calc(var(--gap) * 2));
 
+  /* Colors Variable Demo*/
+  --main-cl: #42ada5;
+  --yellow-cl: #f9f6ee;
+  --white-cl: #ffffff;
+  --black-cl: #141414;
+  --gray-cl: #f7f0ef;
 
-	/* Colors Variable Demo*/
-	--main-cl: #42ada5;
-	--yellow-cl: #f9f6ee;
-	--white-cl: #ffffff;
-	--black-cl: #141414;
-	--gray-cl: #888;
+  // Fontsize - Lineheight Variable Demo
+  --fs-h1: 7.5rem;
+  --lh1-h1: 8rem;
 
-	// Fontsize - Lineheight Variable Demo
-	--fs-h1: 9rem;
-	--lh1-h1: 10rem;
+  --fs-body: 1.8rem;
+  --lh-body: 2rem;
 
-	--fs-h2: 8.5rem;
-	--lh1-h2: 9rem;
+  --fs-body-s: 1.5rem;
+  --lh-body-s: 2rem;
 
-	--fs-body: 1.8rem;
-	--lh-body: 2rem;
+  --fs-textbutton: 1.7rem;
+  --lh-textbutton: 2rem;
 
-	// General Variable Demo
-	--height-button: 42px;
+  // General Variable Demo
+  --height-button: 40px;
 
-	// Timing Transition Variable Demo
-	--duration: 0.4s;
+  // Timing Transition Variable Demo
+  --duration: 0.4s;
 
-	// Responsive
-	@include md {
-		--container-max-width: 1140px;
-	}
-	@include sm {
-		--container-max-width: 960px; 
-	}
-	@include xs {
-		--container-max-width: 720px; 
-
-	}
-	@include xxs {
-		--container-max-width: 100%;
-	}
+  // Responsive
+  @include md {
+    --container-max-width: 1140px;
+  }
+  @include sm {
+    --container-max-width: 960px;
+  }
+  @include xs {
+    --container-max-width: 720px;
+  }
+  @include xxs {
+    --container-max-width: 100%;
+  }
 }

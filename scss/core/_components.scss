@@ -1,0 +1,22 @@
+.heading {
+  font-size: var(--fs-h1);
+  line-height: var(--lh1-h1);
+}
+.desc {
+  font-size: var(--fs-body);
+  line-height: var(---lh-body);
+}
+.btnsub {
+  font-size: var(--fs-textbutton);
+  line-height: var(--lh-textbutton);
+  height: var(--height-button);
+  background-color: var(--black-cl);
+  color: var(--white-cl);
+  width: 100%;
+  cursor: pointer;
+}
+.textskip {
+  font-size: var(--fs-body-s);
+  line-height: var(--lh-body-s);
+}
+
