@@ -14,11 +14,18 @@
   background-color: var(--black-cl);
   color: var(--white-cl);
   width: 100%;
+  @include transition;
   cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+  }
 }
 .textskip {
   font-size: var(--fs-body-s);
   line-height: var(--lh-body-s);
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .border {

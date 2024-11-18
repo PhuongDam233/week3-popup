@@ -50,4 +50,29 @@
       }
     }
   }
+  @include sm {
+    &__inner {
+      flex-direction: column;
+      &-img {
+        width: 101%;
+        height: 250px;
+      }
+      &-content {
+        width: 100%;
+      }
+    }
+  }
+  @include xxs {
+    &__inner {
+      width: 80vw;
+      &-img {
+        display: none;
+      }
+    }
+  }
+  @include xxxs {
+    &__inner {
+      width: 88vw;
+    }
+  }
 }

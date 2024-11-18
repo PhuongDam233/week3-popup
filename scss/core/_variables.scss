@@ -11,8 +11,8 @@
   --gray-cl: #f7f0ef;
 
   // Fontsize - Lineheight Variable Demo
-  --fs-h1: 7.5rem;
-  --lh1-h1: 8rem;
+  --fs-h1: 10rem;
+  --lh1-h1: 10rem;
 
   --fs-body: 1.8rem;
   --lh-body: 2rem;
@@ -30,6 +30,10 @@
   --duration: 0.4s;
 
   // Responsive
+  @include lg {
+    --fs-h1: 7.5rem;
+    --lh1-h1: 8rem;
+  }
   @include md {
     --container-max-width: 1140px;
     --fs-h1: 6rem;
