@@ -1,12 +1,19 @@
 .popup {
+  &__overlay {
+    background-color: var(--black-cl);
+    opacity: 0.6;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
   &__inner {
     position: fixed;
-    height: 485px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
     display: flex;
+    background-color: var(--white-cl);
     &-img {
       width: 50%;
       img {
@@ -22,17 +29,13 @@
       flex-direction: column;
       justify-content: center;
       gap: 10px;
-      .heading {
-        border: 1px solid var(--gray-cl);
-      }
-      .desc {
-        border: 1px solid var(--gray-cl);
-      }
       form {
         input {
           width: 100%;
           margin-bottom: 5px;
           outline: none;
+          color: var(--black-cl);
+          opacity: 0.9;
           border: 1px solid var(--black-cl);
           padding: 8px 8px;
         }

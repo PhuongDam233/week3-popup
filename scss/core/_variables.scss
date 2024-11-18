@@ -6,8 +6,6 @@
   --max-width-container: calc(1200px + calc(var(--gap) * 2));
 
   /* Colors Variable Demo*/
-  --main-cl: #42ada5;
-  --yellow-cl: #f9f6ee;
   --white-cl: #ffffff;
   --black-cl: #141414;
   --gray-cl: #f7f0ef;
@@ -34,6 +32,8 @@
   // Responsive
   @include md {
     --container-max-width: 1140px;
+    --fs-h1: 6rem;
+    --lh1-h1: 6rem;
   }
   @include sm {
     --container-max-width: 960px;
