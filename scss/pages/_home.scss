@@ -1,0 +1,18 @@
+.popup {
+  &__inner {
+    position: fixed;
+    width: 50vw;
+    height: 485px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    display: flex;
+    &-img {
+      width: 50%;
+    }
+    &-content {
+      width: 50%;
+    }
+  }
+}
