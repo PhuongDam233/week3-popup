@@ -3,6 +3,7 @@
   @include transition;
   &.active {
     @include visible(1);
+    z-index: 9999;
   }
   &__overlay {
     background-color: var(--black-cl);
@@ -35,15 +36,21 @@
       flex-direction: column;
       justify-content: center;
       gap: 10px;
-      form {
+      .form {
         input {
           width: 100%;
           margin-bottom: 5px;
           outline: none;
           color: var(--black-cl);
-          opacity: 0.9;
           border: 1px solid var(--black-cl);
           padding: 8px 8px;
+        }
+        .emailFeedback {
+          margin-bottom: 5px;
+        }
+        &.--invalid {
+          border-color: var(--red-cl);
+          @include transition;
         }
       }
       .textskip {
@@ -56,7 +63,7 @@
       }
     }
   }
-  @include sm {
+  @include maxW(1025px) {
     &__inner {
       flex-direction: column;
       &-img {

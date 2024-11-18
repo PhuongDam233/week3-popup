@@ -9,6 +9,7 @@
   --white-cl: #ffffff;
   --black-cl: #141414;
   --gray-cl: #f7f0ef;
+  --red-cl: #ee0000;
 
   // Fontsize - Lineheight Variable Demo
   --fs-h1: 10rem;
@@ -36,11 +37,11 @@
   }
   @include md {
     --container-max-width: 1140px;
-    --fs-h1: 6rem;
-    --lh1-h1: 6rem;
   }
   @include sm {
     --container-max-width: 960px;
+    --fs-h1: 6rem;
+    --lh1-h1: 6rem;
   }
   @include xs {
     --container-max-width: 720px;

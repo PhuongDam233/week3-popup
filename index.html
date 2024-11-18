@@ -20,7 +20,7 @@
   </head>
 
   <body class="homepage">
-    <div class="popup active">
+    <div class="popup">
       <div class="popup__overlay"></div>
       <div class="popup__inner">
         <div class="popup__inner-img">
@@ -36,9 +36,9 @@
           <p class="desc border">
             Enter your email below to join our awesome mailing list.
           </p>
-          <form action="#" method="post">
-            <input type="text" placeholder="Your email" />
-            <p class="error"></p>
+          <form action="#" method="post" id="formjs" class="form">
+            <input type="text" placeholder="Your email" id="emailinput" />
+            <p class="emailFeedback"></p>
             <button class="btnsub">Submit</button>
           </form>
           <p class="textskip border">No thanks</p>
